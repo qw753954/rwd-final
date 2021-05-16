@@ -1,0 +1,14 @@
+$primary: #3D1101;
+$light: #EFE9E7;
+$highlight: #FF5E45;
+@mixin pad {
+    @media(max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media(max-width: 768px) {
+        @content;
+    }
+}

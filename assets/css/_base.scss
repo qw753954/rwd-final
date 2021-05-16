@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: $primary;
+    line-height: 1.5;
+    background-color: #EFE9E7;
+    font-family: 'Noto Sans TC';
+}
+
+a {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+    transition: .3s;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    transition: .3s;
+}
+
+input {
+    font-family: inherit;
+    border: 1px solid #ccc;
+    &:focus {
+        outline: none;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}

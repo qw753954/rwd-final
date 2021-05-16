@@ -1,0 +1,225 @@
+.products-content {
+    padding-top: 58px;
+    padding-bottom: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    aside {
+        width: 25%;
+    }
+    &>div {
+        width: 70%;
+    }
+    @include mobile {
+        aside,
+        &>div {
+            width: 100%;
+        }
+        aside {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.aside {
+    &-title {
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        i {
+            font-size: 32px;
+            padding-right: 12px;
+        }
+    }
+    &-link {
+        padding: 12px;
+        border-bottom: 1px solid $primary;
+        &.active {
+            color: #fff;
+            background-color: $primary;
+        }
+        &:not(&.active):hover {
+            color: #fff;
+            background-color: rgba($primary, .5);
+        }
+    }
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.search {
+    width: 70%;
+    display: flex;
+    @include mobile {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    input {
+        padding: 8px;
+        background-color: transparent;
+        border: 2px solid $primary;
+        width: 100%;
+        border-radius: 5px 0 0 5px;
+        &:focus {
+            background-color: #fff;
+        }
+    }
+    button {
+        color: #fff;
+        background-color: $primary;
+        border: 1px solid $primary;
+        padding-right: 8px;
+        padding-left: 8px;
+        border-radius: 0 5px 5px 0;
+    }
+}
+
+.cart {
+    width: 30%;
+    text-align: right;
+    position: relative;
+    @include mobile {
+        width: 100%;
+    }
+    strong {
+        padding-right: 12px;
+        margin-right: 12px;
+        border-right: 1px solid $primary;
+        transition: .3s;
+    }
+    i {
+        font-size: 24px;
+    }
+    span {
+        position: absolute;
+        top: -1px;
+        right: 8px;
+        color: #fff;
+        font-size: 8px;
+        text-align: center;
+        width: 18px;
+        height: 18px;
+        background-color: $highlight;
+        border-radius: 50%;
+    }
+    a {
+        display: inline-block;
+        padding: 8px 16px 8px 10px;
+    }
+    a:hover strong {
+        letter-spacing: 5px;
+    }
+}
+
+.card {
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &-item {
+        width: 31%;
+        margin-bottom: 30px;
+        box-shadow: 2px 2px 6px #aaa;
+        @include pad {
+            width: 45%;
+        }
+        @include mobile {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &-img {
+        height: 140px;
+        position: relative;
+        background: no-repeat center/ cover;
+        @include mobile {
+            height: 120px;
+        }
+    }
+    &-body {
+        padding: 12px;
+        text-align: center;
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            &::after {
+                content: '';
+                display: block;
+                width: 40px;
+                margin: auto;
+                background-color: $primary;
+                height: 1px;
+                margin-top: 8px;
+            }
+        }
+        small {
+            font-size: 12px;
+        }
+        p {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        a {
+            padding: 8px;
+            font-size: 14px;
+            text-align: center;
+            color: $highlight;
+            border: 2px solid $highlight;
+            &:hover {
+                color: #fff;
+                background-color: $highlight;
+            }
+        }
+    }
+}
+
+.favorite {
+    color: #fff;
+    padding: 10px;
+    &.active {
+        font-weight: 900;
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+    @include mobile {
+        font-size: 20px;
+    }
+}
+
+.hotTag {
+    &-block {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        width: 105px;
+        height: 105px;
+        text-align: center;
+        overflow: hidden;
+    }
+    &-text {
+        position: absolute;
+        top: 12px;
+        right: -55px;
+        padding: 4px;
+        width: 150%;
+        font-size: 12px;
+        letter-spacing: 2px;
+        background-color: #0c9;
+        transform: rotate(45deg);
+    }
+}
