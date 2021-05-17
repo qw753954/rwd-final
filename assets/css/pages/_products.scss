@@ -75,7 +75,7 @@
     button {
         color: #fff;
         background-color: $primary;
-        border: 1px solid $primary;
+        border: 2px solid $primary;
         padding-right: 8px;
         padding-left: 8px;
         border-radius: 0 5px 5px 0;
@@ -129,6 +129,10 @@
         width: 31%;
         margin-bottom: 30px;
         box-shadow: 2px 2px 6px #aaa;
+        transition: .3s;
+        &:hover {
+            transform: translateY(-6px);
+        }
         @include pad {
             width: 45%;
         }

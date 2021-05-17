@@ -756,7 +756,7 @@ img {
 .search button {
   color: #fff;
   background-color: #3D1101;
-  border: 1px solid #3D1101;
+  border: 2px solid #3D1101;
   padding-right: 8px;
   padding-left: 8px;
   border-radius: 0 5px 5px 0;
@@ -824,6 +824,13 @@ img {
   margin-bottom: 30px;
   -webkit-box-shadow: 2px 2px 6px #aaa;
           box-shadow: 2px 2px 6px #aaa;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.card-item:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 @media (max-width: 1024px) {
