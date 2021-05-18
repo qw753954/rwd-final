@@ -19,8 +19,8 @@
         box-shadow: 2px 2px 10px #aaa;
         border-top: 5px solid $highlight;
         h3 {
-            font-weight: 700;
             font-size: 28px;
+            font-weight: 900;
             text-align: center;
             margin-bottom: 24px;
         }
@@ -29,14 +29,12 @@
         padding: 0 24px;
         div {
             margin-bottom: 24px;
-            text-align: left;
         }
         input {
             width: 100%;
             padding: 8px 8px 8px 36px;
         }
         label {
-            text-align: left;
             display: block;
             margin-bottom: 4px;
             position: relative;
@@ -45,7 +43,7 @@
                 left: 12px;
                 top: 34px;
                 color: rgba($primary, .5);
-                font-family: "Font Awesome 5 Pro";
+                font-family: "Font Awesome 5 Pro"; // 改 Pro 才有出現 icon
             }
         }
         label[for=loginEmail]::before,
@@ -104,8 +102,8 @@
     display: inline-block;
     font-size: 14px;
     color: $highlight;
-    border-bottom: 1px solid transparent;
-    &:hover {
-        border-bottom: 1px solid $highlight;
+    border-bottom: 2px solid transparent;
+    &:hover { 
+        border-bottom: 2px solid $highlight;
     }
 }
