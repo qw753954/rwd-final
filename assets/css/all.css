@@ -1063,6 +1063,9 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .account-cardBody .btn-submit {
+    width: 100%;
+  }
 }
 
 .account-rule {

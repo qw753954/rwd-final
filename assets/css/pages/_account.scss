@@ -72,6 +72,9 @@
         }
         @include mobile {
             flex-direction: column;
+            .btn-submit{
+                width: 100%;
+            }
         }
     }
     // 僅註冊↓
