@@ -11,4 +11,8 @@ $(document).ready(() => {
             $(item).toggleClass('active');
         })
     })
+
+    $('#goToSignup').click(() => {
+        window.location = '../signup.html';
+    })
 });
