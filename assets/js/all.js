@@ -13,6 +13,6 @@ $(document).ready(() => {
     })
 
     $('#goToSignup').click(() => {
-        window.location = '../signup.html';
+        window.location = 'signup.html';
     })
 });
